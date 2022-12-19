@@ -3,6 +3,15 @@ from tkinter import *
 import speedtest
 
 
+def speedcheck():
+    speed = speedtest.Speedtest() #module.class or func
+    speed.get_servers()
+    down = str(round(speed.download()/(10**6) , 3)) + "Mbps" #in bit/s
+    up = str(round(speed.upload()/(10**6) , 3)) + "Mbps"
+    lab_down.config(text = down)
+    lab_up.config(text = up) 
+
+
 sp = Tk() 
 sp.title(" INTERNET SPEED TEST ") #name
 sp.geometry("500x650") #size
