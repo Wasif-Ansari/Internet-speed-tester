@@ -32,7 +32,7 @@ lab.place(x = 60 , y=290, height=50 ,width=380)
 lab_up = Label(sp,text = "00", font = ("Time New Roman",28,"bold","italic"))
 lab_up.place(x = 60 , y=360, height=50 ,width=380)
 
-button = Button(sp,text = "Run Test" , font = ("Time New Roman",28,"bold","italic") , relief=RAISED, bg = "red") 
+button = Button(sp,text = "Run Test" , font = ("Time New Roman",28,"bold","italic") , relief=RAISED, bg = "red",command = speedcheck) 
 #RAISED TO LOOK IN 3D
 button.place(x = 60 , y=460, height=50 ,width=380)
 
