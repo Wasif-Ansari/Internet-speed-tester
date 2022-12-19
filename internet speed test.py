@@ -17,5 +17,11 @@ lab.place(x = 60 , y=130, height=50 ,width=380)
 lab_down = Label(sp,text = "00", font = ("Time New Roman",28,"bold","italic"))
 lab_down.place(x = 60 , y=200, height=50 ,width=380)
 
+lab = Label(sp,text = "Uploading Speed", font = ("Time New Roman",28,"bold","italic"))
+lab.place(x = 60 , y=290, height=50 ,width=380)
+
+lab_up = Label(sp,text = "00", font = ("Time New Roman",28,"bold","italic"))
+lab_up.place(x = 60 , y=360, height=50 ,width=380)
+
 
 sp.mainloop() 
